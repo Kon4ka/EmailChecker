@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>765</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: &quot;Copperplate Gothic Light&quot;;
+background-color: rgb(21, 25, 31);</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>745</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Copperplate Gothic Light</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(202, 206, 216);
+font-size: 18px;
+font: &quot;Copperplate Gothic Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Поиск</string>
+    </property>
+    <property name="margin">
+     <number>2</number>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>721</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QWidget" name="widget_6" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="font">
+           <font>
+            <family>Copperplate Gothic Light</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>Со словами в заголовке: </string>
+          </property>
+          <property name="margin">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="WordsInSubjectLine">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>21</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+border: 0px solid  rgb(39, 77, 105) ;
+	background-color: rgb(14, 16, 20);
+color: #FFF;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QWidget" name="widget_5" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="font">
+           <font>
+            <family>Copperplate Gothic Light</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>От кого:</string>
+          </property>
+          <property name="margin">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="fromWhoLine">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>21</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+border: 0px solid  rgb(39, 77, 105) ;
+	background-color: rgb(14, 16, 20);
+color: #FFF;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QWidget" name="widget_8" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="font">
+           <font>
+            <family>Copperplate Gothic Light</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>Со словом в названии приложения к письму: </string>
+          </property>
+          <property name="margin">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="WordsInAttachLine">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>21</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+border: 0px solid  rgb(39, 77, 105) ;
+	background-color: rgb(14, 16, 20);
+color: #FFF;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QWidget" name="widget_7" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="font">
+           <font>
+            <family>Copperplate Gothic Light</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>Со словами в тексте:</string>
+          </property>
+          <property name="margin">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="WordsInTextLine">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>21</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+border: 0px solid  rgb(39, 77, 105) ;
+	background-color: rgb(14, 16, 20);
+color: #FFF;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QWidget" name="widget_9" native="true">
+       <property name="styleSheet">
+        <string notr="true">outline: 0px;</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="font">
+           <font>
+            <family>Copperplate Gothic Light</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+          </property>
+          <property name="text">
+           <string>Дата получения: </string>
+          </property>
+          <property name="margin">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="minimumSize">
+           <size>
+            <width>331</width>
+            <height>31</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QDateEdit {
+	color: rgb(202, 206, 216);
+	font-size: 14px;
+	border: 0px solid  rgb(39, 77, 105) ;
+	background-color: rgb(14, 16, 20);
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+QDateEdit::drop-down 
+{;
+	margin-left: -12px;
+	margin-top: 2px;
+	background-image: url(:/Pngs/Assets/ICLight/chevron-down.png);
+    border: 0px solid red;
+}
+/*
+QDateEdit QAbstracctItemView: enabled {
+	
+	background-color: rgb(35, 41, 51);
+	color: rgb(179, 203, 231);
+}*/
+
+QCalendarWidget QToolButton {
+  	/*height: 60px;
+  	width: 150px;*/
+  	color: white;
+  	font-size: 14px;
+  	icon-size: 16px, 16px;
+  	background-color:transparent;
+  }
+  QCalendarWidget QMenu {
+  	/*width: 150px;*/
+  	left: 20px;
+  	color: white;
+  	font-size: 14px;
+  	background-color: rgb(100, 100, 120);
+  }
+  QCalendarWidget QSpinBox { 
+  	/*width: 50px; */
+  	font-size: 14px; 
+  	color: white; 
+  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); 
+  	selection-background-color: rgb(136, 136, 136);
+  	selection-color: rgb(255, 255, 255);
+  }
+  QCalendarWidget QSpinBox::up-button { subcontrol-origin: border;  subcontrol-position: top right;  width:25px; }
+  QCalendarWidget QSpinBox::down-button {subcontrol-origin: border; subcontrol-position: bottom right;  width:25px;}
+  QCalendarWidget QSpinBox::up-arrow { width:20px;  height:20px; }
+  QCalendarWidget QSpinBox::down-arrow { width:20px;  height:20px; }
+   
+  /* header row */
+  QCalendarWidget QWidget { alternate-background-color: rgb(58, 65, 98); }
+   
+  /* normal days */
+  QCalendarWidget QAbstractItemView:enabled 
+  {
+  	font-size: 16px;  
+  	color: rgb(180, 180, 180);  
+  	background-color: rgb(35, 41, 51);  
+  	selection-background-color: rgb(55, 61, 100);  
+  	selection-color: rgb(0, 255, 0); 
+  }
+   
+  /* days in other months */
+  /* navigation bar */
+QCalendarWidget QWidget#qt_calendar_navigationbar
+{ 
+  background-color: rgb(37, 42, 50); 
+}
+
+QCalendarWidget QAbstractItemView:disabled 
+{ 
+color: rgb(64, 64, 64); 
+}
+</string>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="mailWorkSearchButton">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color: rgb(166, 177, 211);
+	background-color: rgb(38, 45, 58);
+	border-left: 1px solid rgb(57, 79, 100);
+	border-right: 1px solid rgb(51, 54, 60);	
+	border-bottom: 3px solid rgb(28, 31, 46);
+
+	font-size: 16px;
+	font: &quot;Copperplate Gothic Light&quot;;
+
+	border-radius: 10px
+}
+QPushButton::hover {
+	background-color: rgb(25, 45, 64);
+	border-left: 2px solid rgb(37, 46, 53);
+	border-right: 2px solid rgb(31, 34, 40);	
+	border-bottom: 3px solid rgb(18, 21, 26);
+}
+
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+	border-left: 2px solid rgb(5, 26, 33);
+	border-right: 2px solid rgb(5, 24, 30);	
+	border-bottom: 3px solid rgb(5, 21, 26);
+}</string>
+          </property>
+          <property name="text">
+           <string>  Поиск</string>
+          </property>
+          <property name="icon">
+           <iconset resource="auto_res.qrc">
+            <normaloff>:/Pngs/Assets/ICLight/search.png</normaloff>:/Pngs/Assets/ICLight/search.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>741</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(27, 32, 40);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(77, 87, 99);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: rgb(107, 117, 139);
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(117, 135, 150);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(37, 42, 50);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+/*QScrollBar::sub-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}*/
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(47, 52, 60);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(37, 42, 50);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+/*QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}*/
+QScrollBar::add-line:vertical:pressed {	
+	background-color:  rgb(47, 52, 60);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+
+
+</string>
+   </property>
+   <widget class="QListWidget" name="mailList">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>271</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget
+{
+border : 0px solid black;
+border-radius: 20px;
+background : rgb(12, 14, 18);
+padding: 6px;
+outline: 0px;
+font-size: 18px;
+}
+ QListView::item:selected
+{
+border : 2px solid rgb(21, 25, 31);
+background : rgb(41, 49, 61);
+}
+
+QListView::item {
+	color: rgb(202, 206, 216);
+    background-color:rgb(21, 25, 31);
+	border-radius: 10px;
+	padding: 12px;
+	margin: 5px
+}
+
+/*QListWidget QScrollBar
+{
+background : rgb(33, 39, 48);
+border: 2px solid red;
+border-radius: 10px;
+}
+QListWidget QScrollBar::handle
+{
+background : rgb(91, 100, 105);
+}
+
+QListWidget QScrollBar::handle::pressed
+{
+background : rgb(107, 117, 127);
+}
+QListView  QScrollBar::down-arrow:vertical {               
+
+	height: 40px; 
+	width: 40px  
+ }
+*/</string>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="showDropIndicator" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_10" native="true">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>441</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>441</width>
+       <height>137</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <widget class="QWidget" name="widget_12" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLabel" name="label_16">
+           <property name="font">
+            <font>
+             <family>Copperplate Gothic Light</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+           </property>
+           <property name="text">
+            <string>Тема:</string>
+           </property>
+           <property name="margin">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="searchedSubjectLine">
+           <property name="minimumSize">
+            <size>
+             <width>221</width>
+             <height>21</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+border: 0px solid  rgb(39, 77, 105) ;
+	background-color: rgb(14, 16, 20);
+color: #FFF;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QWidget" name="widget_11" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_14">
+           <property name="font">
+            <font>
+             <family>Copperplate Gothic Light</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+           </property>
+           <property name="text">
+            <string>От кого:</string>
+           </property>
+           <property name="margin">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="searchedFromWhoLine">
+           <property name="minimumSize">
+            <size>
+             <width>221</width>
+             <height>21</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+border: 0px solid  rgb(39, 77, 105) ;
+	background-color: rgb(14, 16, 20);
+color: #FFF;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QWidget" name="widget_13" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="label_15">
+           <property name="font">
+            <font>
+             <family>Copperplate Gothic Light</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+           </property>
+           <property name="text">
+            <string>Дата получения: </string>
+           </property>
+           <property name="margin">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="searchedDateEdit">
+           <property name="styleSheet">
+            <string notr="true">QDateEdit {
+	color: rgb(202, 206, 216);
+	font-size: 14px;
+	border: 0px solid  rgb(39, 77, 105) ;
+	background-color: rgb(14, 16, 20);
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 20px;
+}</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="calendarPopup">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextBrowser" name="textMailBrowser">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>130</y>
+       <width>441</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+	color: rgb(202, 206, 216);
+	background-color: rgb(35, 41, 51);
+	border-radius: 15px;
+	padding: 10px;
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:8.50909pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.50909pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>771</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(35, 41, 51);</string>
+   </property>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>-10</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 2px solid transparent;
+}
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+}</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="mailWorkCollapseButton">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="auto_res.qrc">
+         <normaloff>:/Pngs/Assets/ICLight/minus.png</normaloff>:/Pngs/Assets/ICLight/minus.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mailWorkCloseButton">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="auto_res.qrc">
+         <normaloff>:/Pngs/Assets/ICLight/x.png</normaloff>:/Pngs/Assets/ICLight/x.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>mailWorkCloseButton</zorder>
+    <zorder>mailWorkCollapseButton</zorder>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(145, 160, 187);
+font: &quot;Copperplate Gothic Light&quot;;
+font-size: 14px;</string>
+    </property>
+    <property name="text">
+     <string>Работа с письмами</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="auto_res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

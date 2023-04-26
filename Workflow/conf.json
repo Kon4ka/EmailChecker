@@ -1,0 +1,9 @@
+{
+  "position1": ["word1", 2, 4],
+  "position2": ["word2", 0, 1],
+  "position3": ["word3", 1, 3],
+  "position4": ["word4", 3, 2],
+  "position5": ["word5", 0, 5],
+  "position6": ["word6", 2, 0],
+  "remember": true
+}

@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>587</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>587</width>
+    <height>601</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>587</width>
+    <height>601</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(21, 25, 31);
+font: &quot;Copperplate Gothic Light&quot;;</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>567</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>567</width>
+     <height>531</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1000</width>
+     <height>1000</height>
+    </size>
+   </property>
+   <widget class="QPushButton" name="settingsChangeUserButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>531</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(166, 177, 211);
+	background-color: rgb(38, 45, 58);
+	border-left: 1px solid rgb(57, 79, 100);
+	border-right: 1px solid rgb(51, 54, 60);	
+	border-bottom: 3px solid rgb(28, 31, 46);
+
+	font-size: 16px;
+	font: &quot;Copperplate Gothic Light&quot;;
+
+	border-radius: 10px
+}
+QPushButton::hover {
+	background-color: rgb(25, 45, 64);
+	border-left: 2px solid rgb(37, 46, 53);
+	border-right: 2px solid rgb(31, 34, 40);	
+	border-bottom: 3px solid rgb(18, 21, 26);
+}
+
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+	border-left: 2px solid rgb(5, 26, 33);
+	border-right: 2px solid rgb(5, 24, 30);	
+	border-bottom: 3px solid rgb(5, 21, 26);
+}</string>
+    </property>
+    <property name="text">
+     <string>  Сменить пользователя</string>
+    </property>
+    <property name="icon">
+     <iconset resource="auto_res.qrc">
+      <normaloff>:/Pngs/Assets/ICLight/corner-left-up.png</normaloff>:/Pngs/Assets/ICLight/corner-left-up.png</iconset>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>531</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>521</width>
+      <height>151</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>531</width>
+      <height>151</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>531</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="font">
+         <font>
+          <family>Copperplate Gothic Light</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Показать/спрятать Виджет</string>
+        </property>
+        <property name="margin">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="font">
+         <font>
+          <family>Copperplate Gothic Light</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Запускать с Windows</string>
+        </property>
+        <property name="margin">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <family>Copperplate Gothic Light</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;</string>
+        </property>
+        <property name="text">
+         <string>Запомнить меня</string>
+        </property>
+        <property name="margin">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="showHideWidgetChecker">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+color: rgb(202, 206, 216);
+font-size: 14px;
+font: &quot;Copperplate Gothic Light&quot;;
+}
+
+QCheckBox::indicator
+{
+border : 2px solid rgb(79, 117, 145);
+width : 20px;
+height : 20px;
+border-radius : 10px;
+}
+
+
+QCheckBox::hover {
+	color: #9ebad6
+}
+
+
+QCheckBox::hover::checked {
+	border: solid #232933;
+}
+/*
+QCheckBox:hover::unchecked {
+	border: solid rgb(79, 117, 145);
+}
+
+
+QCheckBox:indicator: {
+	border: 4px
+}
+
+QCheckBox:indicator:unchecked:hover {
+	color:#576e84
+}
+*/
+
+QCheckBox::indicator::checked
+{
+	image: url(:/Pngs/Assets/ICLight/check.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="windowsStartChecker">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+color: rgb(202, 206, 216);
+font-size: 14px;
+font: &quot;Copperplate Gothic Light&quot;;
+}
+
+QCheckBox::indicator
+{
+border : 2px solid rgb(79, 117, 145);
+width : 20px;
+height : 20px;
+border-radius : 10px;
+}
+
+
+QCheckBox::hover {
+	color: #9ebad6
+}
+
+
+QCheckBox::hover::checked {
+	border: solid #232933;
+}
+
+QCheckBox::indicator::checked
+{
+	image: url(:/Pngs/Assets/ICLight/check.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="rememberMeChecker">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+color: rgb(202, 206, 216);
+font-size: 14px;
+font: &quot;Copperplate Gothic Light&quot;;
+}
+
+QCheckBox::indicator
+{
+border : 2px solid rgb(79, 117, 145);
+width : 20px;
+height : 20px;
+border-radius : 10px;
+}
+
+
+QCheckBox::hover {
+	color: #9ebad6
+}
+
+
+QCheckBox::hover::checked {
+	border: solid #232933;
+}
+/*
+QCheckBox:hover::unchecked {
+	border: solid rgb(79, 117, 145);
+}
+
+
+QCheckBox:indicator: {
+	border: 4px
+}
+
+QCheckBox:indicator:unchecked:hover {
+	color:#576e84
+}
+*/
+
+QCheckBox::indicator::checked
+{
+	image: url(:/Pngs/Assets/ICLight/check.png);
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>531</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+border: 2px solid  rgb(39, 77, 105) ;
+color: #FFF;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+QComboBox QAbstractItemView {
+  color: rgb(75, 130, 160);	
+  background-color: rgb(27,40,65);
+  padding: 10px;
+  selection-background-color: rgb(39, 44, 54);
+}
+
+QComboBox {
+    border: 2px solid rgb(39, 77, 105);
+    border-radius: 10px;
+    padding: 1px 20px 3px 5px;
+    min-width: 6em;
+	color: rgb(202, 206, 216);
+	font-size: 14px;
+	font: &quot;Copperplate Gothic Light&quot;;
+}
+
+QComboBox::drop-down 
+{;
+	margin-left: -10px;
+	margin-top: 2px;
+	background-image: url(:/Pngs/Assets/ICLight/chevron-down.png);
+    border: 0px;
+}
+
+
+QLabel {
+	font: &quot;Copperplate Gothic Light&quot;;
+	color: rgb(202, 206, 216);
+	font-size: 16px;
+}
+</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>531</width>
+       <height>234</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,0,0">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>0</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>6</number>
+      </property>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="whereComboBox_1">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Отправитель</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Заголовок письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Текст письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Название вложений</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="placeholderText">
+         <string>Введите ключевое слово</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="whereComboBox_4">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Отправитель</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Заголовок письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Текст письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Название вложений</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="placeholderText">
+         <string>Введите ключевое слово</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="whereComboBox_6">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Отправитель</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Заголовок письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Текст письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Название вложений</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLineEdit" name="lineEdit_4">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="placeholderText">
+         <string>Введите ключевое слово</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEdit_1">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="placeholderText">
+         <string>Введите ключевое слово</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="whereComboBox_5">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Отправитель</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Заголовок письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Текст письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Название вложений</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLineEdit" name="lineEdit_3">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="placeholderText">
+         <string>Введите ключевое слово</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="whereComboBox_3">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Отправитель</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Заголовок письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Текст письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Название вложений</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="whereComboBox_2">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Отправитель</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Заголовок письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Текст письма</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Название вложений</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLineEdit" name="lineEdit_6">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="placeholderText">
+         <string>Введите ключевое слово</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Ключевое слово/email</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_1">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Где искать</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_2">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Цвет уведомления</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QComboBox" name="colorComboBox_1">
+        <property name="minimumSize">
+         <size>
+          <width>143</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>121</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="toolTipDuration">
+         <number>-5</number>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Красный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_red.png</normaloff>:/Custom/Assets/Custom/combo_red.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_Green.png</normaloff>:/Custom/Assets/Custom/combo_Green.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синий</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_blue.png</normaloff>:/Custom/Assets/Custom/combo_blue.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_yellow.png</normaloff>:/Custom/Assets/Custom/combo_yellow.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Лазурный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_azure.png</normaloff>:/Custom/Assets/Custom/combo_azure.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_purple.png</normaloff>:/Custom/Assets/Custom/combo_purple.png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QComboBox" name="colorComboBox_2">
+        <property name="minimumSize">
+         <size>
+          <width>143</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>121</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="toolTipDuration">
+         <number>-5</number>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Красный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_red.png</normaloff>:/Custom/Assets/Custom/combo_red.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_Green.png</normaloff>:/Custom/Assets/Custom/combo_Green.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синий</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_blue.png</normaloff>:/Custom/Assets/Custom/combo_blue.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_yellow.png</normaloff>:/Custom/Assets/Custom/combo_yellow.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Лазурный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_azure.png</normaloff>:/Custom/Assets/Custom/combo_azure.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_purple.png</normaloff>:/Custom/Assets/Custom/combo_purple.png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QComboBox" name="colorComboBox_3">
+        <property name="minimumSize">
+         <size>
+          <width>143</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>121</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="toolTipDuration">
+         <number>-5</number>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Красный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_red.png</normaloff>:/Custom/Assets/Custom/combo_red.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_Green.png</normaloff>:/Custom/Assets/Custom/combo_Green.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синий</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_blue.png</normaloff>:/Custom/Assets/Custom/combo_blue.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_yellow.png</normaloff>:/Custom/Assets/Custom/combo_yellow.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Лазурный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_azure.png</normaloff>:/Custom/Assets/Custom/combo_azure.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_purple.png</normaloff>:/Custom/Assets/Custom/combo_purple.png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QComboBox" name="colorComboBox_4">
+        <property name="minimumSize">
+         <size>
+          <width>143</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>121</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="toolTipDuration">
+         <number>-5</number>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Красный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_red.png</normaloff>:/Custom/Assets/Custom/combo_red.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_Green.png</normaloff>:/Custom/Assets/Custom/combo_Green.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синий</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_blue.png</normaloff>:/Custom/Assets/Custom/combo_blue.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_yellow.png</normaloff>:/Custom/Assets/Custom/combo_yellow.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Лазурный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_azure.png</normaloff>:/Custom/Assets/Custom/combo_azure.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_purple.png</normaloff>:/Custom/Assets/Custom/combo_purple.png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QComboBox" name="colorComboBox_5">
+        <property name="minimumSize">
+         <size>
+          <width>143</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>121</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="toolTipDuration">
+         <number>-5</number>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Красный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_red.png</normaloff>:/Custom/Assets/Custom/combo_red.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_Green.png</normaloff>:/Custom/Assets/Custom/combo_Green.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синий</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_blue.png</normaloff>:/Custom/Assets/Custom/combo_blue.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_yellow.png</normaloff>:/Custom/Assets/Custom/combo_yellow.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Лазурный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_azure.png</normaloff>:/Custom/Assets/Custom/combo_azure.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_purple.png</normaloff>:/Custom/Assets/Custom/combo_purple.png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QComboBox" name="colorComboBox_6">
+        <property name="minimumSize">
+         <size>
+          <width>143</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>121</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="toolTipDuration">
+         <number>-5</number>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>5</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Красный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_red.png</normaloff>:/Custom/Assets/Custom/combo_red.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Зеленый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_Green.png</normaloff>:/Custom/Assets/Custom/combo_Green.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Синий</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_blue.png</normaloff>:/Custom/Assets/Custom/combo_blue.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Желтый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_yellow.png</normaloff>:/Custom/Assets/Custom/combo_yellow.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Лазурный</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_azure.png</normaloff>:/Custom/Assets/Custom/combo_azure.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Фиолетовый</string>
+         </property>
+         <property name="icon">
+          <iconset resource="auto_res.qrc">
+           <normaloff>:/Custom/Assets/Custom/combo_purple.png</normaloff>:/Custom/Assets/Custom/combo_purple.png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="settingsMailWorkButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>480</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(166, 177, 211);
+	background-color: rgb(38, 45, 58);
+	border-left: 1px solid rgb(57, 79, 100);
+	border-right: 1px solid rgb(51, 54, 60);	
+	border-bottom: 3px solid rgb(28, 31, 46);
+
+	font-size: 16px;
+	font: &quot;Copperplate Gothic Light&quot;;
+
+	border-radius: 10px
+}
+QPushButton::hover {
+	background-color: rgb(25, 45, 64);
+	border-left: 2px solid rgb(37, 46, 53);
+	border-right: 2px solid rgb(31, 34, 40);	
+	border-bottom: 3px solid rgb(18, 21, 26);
+}
+
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+	border-left: 2px solid rgb(5, 26, 33);
+	border-right: 2px solid rgb(5, 24, 30);	
+	border-bottom: 3px solid rgb(5, 21, 26);
+}</string>
+    </property>
+    <property name="text">
+     <string>  Работа с письмами</string>
+    </property>
+    <property name="icon">
+     <iconset resource="auto_res.qrc">
+      <normaloff>:/Pngs/Assets/ICLight/align-left.png</normaloff>:/Pngs/Assets/ICLight/align-left.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="settingsSaveAndExitButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>480</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: rgb(166, 177, 211);
+	background-color: rgb(38, 45, 58);
+	border-left: 1px solid rgb(57, 79, 100);
+	border-right: 1px solid rgb(51, 54, 60);	
+	border-bottom: 3px solid rgb(28, 31, 46);
+
+	font-size: 14px;
+	font: &quot;Copperplate Gothic Light&quot;;
+
+	border-radius: 10px
+}
+QPushButton::hover {
+	background-color: rgb(25, 45, 64);
+	border-left: 2px solid rgb(37, 46, 53);
+	border-right: 2px solid rgb(31, 34, 40);	
+	border-bottom: 3px solid rgb(18, 21, 26);
+}
+
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+	border-left: 2px solid rgb(5, 26, 33);
+	border-right: 2px solid rgb(5, 24, 30);	
+	border-bottom: 3px solid rgb(5, 21, 26);
+}</string>
+    </property>
+    <property name="text">
+     <string>Сохранить и выйти</string>
+    </property>
+    <property name="icon">
+     <iconset resource="auto_res.qrc">
+      <normaloff>:/Pngs/Assets/ICLight/save.png</normaloff>:/Pngs/Assets/ICLight/save.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>611</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(35, 41, 51);</string>
+   </property>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>-10</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 2px solid transparent;
+}
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+}</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="settingsCollapseButton">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="auto_res.qrc">
+         <normaloff>:/Pngs/Assets/ICLight/minus.png</normaloff>:/Pngs/Assets/ICLight/minus.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="settingsCloseButton">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="auto_res.qrc">
+         <normaloff>:/Pngs/Assets/ICLight/x.png</normaloff>:/Pngs/Assets/ICLight/x.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>settingsCloseButton</zorder>
+    <zorder>settingsCollapseButton</zorder>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(145, 160, 187);
+font: &quot;Copperplate Gothic Light&quot;;
+font-size: 14px;</string>
+    </property>
+    <property name="text">
+     <string>Настройки</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="auto_res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

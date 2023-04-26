@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>752</width>
+    <height>371</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(21, 25, 31);
+font: &quot;Copperplate Gothic Light&quot;;</string>
+  </property>
+  <widget class="QTableView" name="mailListTriggerListTable">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>711</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+         Color: white; /* text color in the table */
+         Gridline-color: black; /*The inner frame color*/
+         Background-color: rgb(33, 39, 48); /* background color in the table*/
+    alternate-background-color: rgb(42, 50, 62);
+         Selection-color: white; /* The text color of the selected area*/
+         Selection-background-color: rgb(84, 89, 97); /*The background color of the selected area*/
+    border: 2px groove rgb(12, 14, 17);
+    border-radius: 30px;
+    padding: 2px 4px;
+}
+
+QHeaderView {
+    color: white;
+    font: bold 10pt;
+         Background-color: rgb(50, 70, 90);/*Set the background color of the header blank area*/
+    border: 0px solid rgb(144, 144, 144);
+    border: 0px solid rgb(191,191,191);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-radius:10px;
+    min-height:29px;
+}
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(27, 32, 40);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(77, 87, 99);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: rgb(107, 117, 139);
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(117, 135, 150);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(37, 42, 50);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+/*QScrollBar::sub-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}*/
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(47, 52, 60);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(37, 42, 50);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+/*QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}*/
+QScrollBar::add-line:vertical:pressed {	
+	background-color:  rgb(47, 52, 60);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>761</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(35, 41, 51);</string>
+   </property>
+   <widget class="QWidget" name="widget_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>-10</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 2px solid transparent;
+}
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+}</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="mailListTriggerCollapseButton">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="auto_res.qrc">
+         <normaloff>:/Pngs/Assets/ICLight/minus.png</normaloff>:/Pngs/Assets/ICLight/minus.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mailListTriggerCloseButton">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="auto_res.qrc">
+         <normaloff>:/Pngs/Assets/ICLight/x.png</normaloff>:/Pngs/Assets/ICLight/x.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>22</width>
+         <height>22</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>mailListTriggerCloseButton</zorder>
+    <zorder>mailListTriggerCollapseButton</zorder>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(145, 160, 187);
+font: &quot;Copperplate Gothic Light&quot;;
+font-size: 14px;</string>
+    </property>
+    <property name="text">
+     <string>Важные письма</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="auto_res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

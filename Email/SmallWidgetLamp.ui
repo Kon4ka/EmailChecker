@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>250</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.800000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(44, 52, 65);</string>
+  </property>
+  <widget class="QLabel" name="colorIndicator">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>101</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="auto_res.qrc">:/Custom/Assets/Custom/red.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="smallWidgetMailListButton">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>70</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: 2px solid transparent;
+	border-radius: 10px
+}
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="auto_res.qrc">
+     <normaloff>:/Light/Assets/Light/mail.svg</normaloff>:/Light/Assets/Light/mail.svg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>36</width>
+     <height>36</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>0</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: 2px solid transparent;
+}
+QPushButton::pressed {
+	background-color: rgb(20, 25, 34);
+}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="smallWidgetSettings">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="auto_res.qrc">
+        <normaloff>:/Light/Assets/Light/settings.svg</normaloff>:/Light/Assets/Light/settings.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="smallWidgetCollapseButton">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="auto_res.qrc">
+        <normaloff>:/Pngs/Assets/ICLight/minus.png</normaloff>:/Pngs/Assets/ICLight/minus.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>22</width>
+        <height>22</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="smallWidgetCloseButton">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="auto_res.qrc">
+        <normaloff>:/Pngs/Assets/ICLight/x.png</normaloff>:/Pngs/Assets/ICLight/x.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>22</width>
+        <height>22</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="username">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(202, 206, 216);
+font-size: 14px;
+font: &quot;Copperplate Gothic Light&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Почтовый ящик</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="auto_res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
