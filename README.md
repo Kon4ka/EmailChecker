@@ -1,3 +1,3 @@
 # EmailChecker
  Bachelor's project "Automated Email Processing"
-! [Alt text] (relative%20path/images/L1.png?raw=true "Title")
+! [L1] (https://github.com/Kon4ka/EmailChecker/blob/main/images/L1.png?raw=true)
