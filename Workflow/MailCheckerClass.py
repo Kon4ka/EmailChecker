@@ -13,6 +13,7 @@ class MailChecker:
         self.mail_server = MailBox(imap_server)
         self.mailbox = None
         self.my_scheduler = None
+        self.result = []
         if not remember_me:
             self.write_to_login_config()
 
@@ -39,7 +40,7 @@ class MailChecker:
         else:
             return -1  ##TODO ERROR
 
-    def check_email_by_triggers(self, queue ,my_scheduler):
+    def check_email_by_triggers(self):
 
         result_letters_list = []
 
@@ -63,9 +64,8 @@ class MailChecker:
                             for att in msg.attachments:
                                 if trigger[0].lower() in att.filename.lower():
                                     result_letters_list.append([msg, trigger[2]])
-        queue.put(result_letters_list)
-        # schedule the next call and pass the queue as an argument
-        my_scheduler.enter(10, 1, self.check_email_by_triggers, argument=(queue, my_scheduler,))
+
+        self.result = result_letters_list
         return result_letters_list
 
     def write_to_login_config(self):

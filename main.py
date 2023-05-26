@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import queue
 import sched, time
 import sys
 import threading
@@ -93,22 +92,10 @@ class MyScript(QWidget):
         self.widget_lamp.show()
         move2RightBottomCorner(self.widget_lamp)
         my_scheduler = sched.scheduler(time.time, time.sleep)
-
-        email_queue = queue.Queue()
-
-        my_scheduler.enter(10, 1, self.mail_checker.check_email_by_triggers, argument=(email_queue, my_scheduler,))
+        result = my_scheduler.enter(10, 1, self.mail_checker.check_email_by_triggers)
         t = threading.Thread(target=my_scheduler.run)
         t.start()
-        self.check_queue(email_queue)
 
-    def check_queue(self, queue):
-        try:
-            email_list = queue.get(False)
-            print(email_list)
-            queue.task_done()
-        except queue.Empty:
-            pass
-        self.after(1000, self.check_queue, queue)
 
     def success_file_login_received(self, l, p):
         self.login, self.password = l, p
