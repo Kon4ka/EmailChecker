@@ -1,0 +1,27 @@
+[
+    [
+        "Важно",
+        "Subject",
+        "red"
+    ],
+    [
+        "нужно",
+        "Subject",
+        "red"
+    ],
+    [
+        "Подписать",
+        "Text",
+        "green"
+    ],
+    [
+        "lira0sirin@yandex.ru",
+        "From",
+        "white"
+    ],
+    [
+        "Plan",
+        "Attach",
+        "pink"
+    ]
+]

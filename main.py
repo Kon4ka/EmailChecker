@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
+import queue
+import sched, time
 import sys
+import threading
+
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QApplication, QWidget
 
@@ -7,7 +11,7 @@ import auto_res_rc
 from Auth import Ui_Form
 from Workflow.Auth_crypto import AuthConfig
 from Workflow.Auth_work import AuthForm
-from Workflow.Config import Config
+from Workflow.Config import JsonConverter, Config
 from Workflow.Lamp_work import LampForm
 from Workflow.MailCheckerClass import MailChecker
 
@@ -48,13 +52,15 @@ def move2RightBottomCorner(win):  # Move to right bottom
 
 class MyScript(QWidget):
     def __init__(self):
-        self.run()
-        self.app = QApplication(sys.argv)
         self.conf = Config("Workflow/conf.json")
         self.widget_auth = None
         self.widget_lamp = None
         self.login, self.password = "", ""
+        self.triggers_conv = JsonConverter("Workflow/triggers.json")
+
         self.mail_checker = MailChecker(imap_server="imap.rambler.ru")
+        self.run()
+        self.app = QApplication(sys.argv)
 
     def run(self):
         self.app = QApplication(sys.argv)
@@ -62,6 +68,7 @@ class MyScript(QWidget):
         self.widget_lamp = LampForm()
         self.widget_auth = AuthForm(self.conf, self.success_file_login_received)
         self.mail_checker = MailChecker(imap_server="imap.rambler.ru")
+        self.mail_checker.triggers = self.triggers_conv.read_list()
         self.start_auth_widget()
         # widget.move(widget.width() * -3, 0)  # чтобы не мелькало
         # 
@@ -85,9 +92,27 @@ class MyScript(QWidget):
         self.widget_lamp.move(self.widget_lamp.width() * -3, 0)  # чтобы не мелькало
         self.widget_lamp.show()
         move2RightBottomCorner(self.widget_lamp)
+        my_scheduler = sched.scheduler(time.time, time.sleep)
+
+        email_queue = queue.Queue()
+
+        my_scheduler.enter(10, 1, self.mail_checker.check_email_by_triggers, argument=(email_queue, my_scheduler,))
+        t = threading.Thread(target=my_scheduler.run)
+        t.start()
+        self.check_queue(email_queue)
+
+    def check_queue(self, queue):
+        try:
+            email_list = queue.get(False)
+            print(email_list)
+            queue.task_done()
+        except queue.Empty:
+            pass
+        self.after(1000, self.check_queue, queue)
 
     def success_file_login_received(self, l, p):
         self.login, self.password = l, p
+        # self.start_lamp_widget()
         # if self.mail_checker.log_in(self.login, self.password) is not -1:
         #     pass
         ### TODO try to login if false go back
